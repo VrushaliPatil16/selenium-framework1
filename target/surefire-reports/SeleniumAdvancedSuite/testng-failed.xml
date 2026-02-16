@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="classes" name="Failed suite [SeleniumAdvancedSuite]" guice-stage="DEVELOPMENT" verbose="0">
+  <test thread-count="2" parallel="classes" name="Test Scenario 1 - Chrome Windows(failed)" verbose="0">
+    <parameter name="browser" value="Chrome"/>
+    <parameter name="browserVersion" value="128.0"/>
+    <parameter name="platformName" value="Windows 10"/>
+    <parameter name="testName" value="Scenario 1 - Chrome Windows 10"/>
+    <classes>
+      <class name="tests.TestScenario1">
+        <methods>
+          <include name="tearDown"/>
+          <include name="runScenario1"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- tests.TestScenario1 -->
+    </classes>
+  </test> <!-- Test Scenario 1 - Chrome Windows(failed) -->
+  <test thread-count="2" parallel="classes" name="Test Scenario 2 - Edge macOS(failed)" verbose="0">
+    <parameter name="browser" value="MicrosoftEdge"/>
+    <parameter name="browserVersion" value="127.0"/>
+    <parameter name="platformName" value="macOS Ventura"/>
+    <parameter name="testName" value="Scenario 2 - Edge macOS Ventura"/>
+    <classes>
+      <class name="tests.TestScenario2">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setup"/>
+          <include name="runScenario2"/>
+          <include name="runScenario1"/>
+        </methods>
+      </class> <!-- tests.TestScenario2 -->
+    </classes>
+  </test> <!-- Test Scenario 2 - Edge macOS(failed) -->
+</suite> <!-- Failed suite [SeleniumAdvancedSuite] -->

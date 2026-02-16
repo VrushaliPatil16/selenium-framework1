@@ -1,0 +1,671 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="0" failed="0" skipped="3">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-02-17T00:06:55 IST" name="SeleniumAdvancedSuite" finished-at="2026-02-17T00:07:01 IST" duration-ms="5300">
+    <groups>
+    </groups>
+    <test started-at="2026-02-17T00:06:55 IST" name="Test Scenario 1 - Chrome Windows" finished-at="2026-02-17T00:06:56 IST" duration-ms="243">
+      <class name="tests.TestScenario1">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.TestScenario1@61dd025]" started-at="2026-02-17T00:06:55 IST" name="setup" finished-at="2026-02-17T00:06:56 IST" duration-ms="231" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[128.0]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Windows 10]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Scenario 1 - Chrome Windows 10]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'Vrushalis-MacBook-Air.local', ip: '2405:201:100f:f00b:25df:cdfa:bee7:d9d1%en0'
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.7.3', java.version: '17.0.18'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: Chrome, browserVersion: 128.0, goog:chromeOptions: {args: [], extensions: []}, platformName: Windows 10, testmu:options: {build: Selenium Advanced Assignment, consoleLogs: true, name: Scenario 1 - Chrome Windows 10, networkLogs: true, screenshots: true, video: true}}]}]
+Capabilities {browserName: Chrome, browserVersion: 128.0, goog:chromeOptions: {args: [], extensions: []}, platformName: Windows 10, testmu:options: {build: Selenium Advanced Assignment, consoleLogs: true, name: Scenario 1 - Chrome Windows 10, networkLogs: true, screenshots: true, video: true}}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'Vrushalis-MacBook-Air.local', ip: '2405:201:100f:f00b:25df:cdfa:bee7:d9d1%en0'
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.7.3', java.version: '17.0.18'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: Chrome, browserVersion: 128.0, goog:chromeOptions: {args: [], extensions: []}, platformName: Windows 10, testmu:options: {build: Selenium Advanced Assignment, consoleLogs: true, name: Scenario 1 - Chrome Windows 10, networkLogs: true, screenshots: true, video: true}}]}]
+Capabilities {browserName: Chrome, browserVersion: 128.0, goog:chromeOptions: {args: [], extensions: []}, platformName: Windows 10, testmu:options: {build: Selenium Advanced Assignment, consoleLogs: true, name: Scenario 1 - Chrome Windows 10, networkLogs: true, screenshots: true, video: true}}
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:537)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:233)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:162)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:142)
+at tests.BaseTest.setup(BaseTest.java:63)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:393)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:326)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:810)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:578)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: java.io.UncheckedIOException: java.net.ConnectException
+at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute0(JdkHttpClient.java:443)
+at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
+at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:55)
+at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute(JdkHttpClient.java:359)
+at org.openqa.selenium.remote.tracing.TracedHttpClient.execute(TracedHttpClient.java:54)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:95)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:67)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:162)
+at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+... 26 more
+Caused by: java.net.ConnectException
+at java.net.http/jdk.internal.net.http.common.Utils.toConnectException(Utils.java:1107)
+at java.net.http/jdk.internal.net.http.PlainHttpConnection.connectAsync(PlainHttpConnection.java:203)
+at java.net.http/jdk.internal.net.http.AsyncSSLConnection.connectAsync(AsyncSSLConnection.java:56)
+at java.net.http/jdk.internal.net.http.Http2Connection.createAsync(Http2Connection.java:450)
+at java.net.http/jdk.internal.net.http.Http2ClientImpl.getConnectionFor(Http2ClientImpl.java:133)
+at java.net.http/jdk.internal.net.http.ExchangeImpl.get(ExchangeImpl.java:98)
+at java.net.http/jdk.internal.net.http.Exchange.establishExchange(Exchange.java:374)
+at java.net.http/jdk.internal.net.http.Exchange.responseAsyncImpl0(Exchange.java:567)
+at java.net.http/jdk.internal.net.http.Exchange.responseAsyncImpl(Exchange.java:411)
+at java.net.http/jdk.internal.net.http.Exchange.responseAsync(Exchange.java:403)
+at java.net.http/jdk.internal.net.http.MultiExchange.responseAsyncImpl(MultiExchange.java:430)
+at java.net.http/jdk.internal.net.http.MultiExchange.lambda$responseAsyncImpl$7(MultiExchange.java:471)
+at java.base/java.util.concurrent.CompletableFuture.uniHandle(CompletableFuture.java:934)
+at java.base/java.util.concurrent.CompletableFuture.uniHandleStage(CompletableFuture.java:950)
+at java.base/java.util.concurrent.CompletableFuture.handle(CompletableFuture.java:2340)
+at java.net.http/jdk.internal.net.http.MultiExchange.responseAsyncImpl(MultiExchange.java:461)
+at java.net.http/jdk.internal.net.http.MultiExchange.lambda$responseAsync0$2(MultiExchange.java:350)
+at java.base/java.util.concurrent.CompletableFuture$UniCompose.tryFire(CompletableFuture.java:1150)
+at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510)
+at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1773)
+... 3 more
+Caused by: java.nio.channels.UnresolvedAddressException
+at java.base/sun.nio.ch.Net.checkAddress(Net.java:159)
+at java.base/sun.nio.ch.Net.checkAddress(Net.java:167)
+at java.base/sun.nio.ch.SocketChannelImpl.checkRemote(SocketChannelImpl.java:816)
+at java.base/sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:839)
+at java.net.http/jdk.internal.net.http.PlainHttpConnection.lambda$connectAsync$0(PlainHttpConnection.java:187)
+at java.base/java.security.AccessController.doPrivileged(AccessController.java:569)
+at java.net.http/jdk.internal.net.http.PlainHttpConnection.connectAsync(PlainHttpConnection.java:189)
+... 21 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="runScenario1()[pri:0, instance:tests.TestScenario1@61dd025]" started-at="2026-02-17T00:06:56 IST" name="runScenario1" finished-at="2026-02-17T00:06:56 IST" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'Vrushalis-MacBook-Air.local', ip: '2405:201:100f:f00b:25df:cdfa:bee7:d9d1%en0'
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.7.3', java.version: '17.0.18'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: Chrome, browserVersion: 128.0, goog:chromeOptions: {args: [], extensions: []}, platformName: Windows 10, testmu:options: {build: Selenium Advanced Assignment, consoleLogs: true, name: Scenario 1 - Chrome Windows 10, networkLogs: true, screenshots: true, video: true}}]}]
+Capabilities {browserName: Chrome, browserVersion: 128.0, goog:chromeOptions: {args: [], extensions: []}, platformName: Windows 10, testmu:options: {build: Selenium Advanced Assignment, consoleLogs: true, name: Scenario 1 - Chrome Windows 10, networkLogs: true, screenshots: true, video: true}}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'Vrushalis-MacBook-Air.local', ip: '2405:201:100f:f00b:25df:cdfa:bee7:d9d1%en0'
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.7.3', java.version: '17.0.18'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: Chrome, browserVersion: 128.0, goog:chromeOptions: {args: [], extensions: []}, platformName: Windows 10, testmu:options: {build: Selenium Advanced Assignment, consoleLogs: true, name: Scenario 1 - Chrome Windows 10, networkLogs: true, screenshots: true, video: true}}]}]
+Capabilities {browserName: Chrome, browserVersion: 128.0, goog:chromeOptions: {args: [], extensions: []}, platformName: Windows 10, testmu:options: {build: Selenium Advanced Assignment, consoleLogs: true, name: Scenario 1 - Chrome Windows 10, networkLogs: true, screenshots: true, video: true}}
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:537)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:233)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:162)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:142)
+at tests.BaseTest.setup(BaseTest.java:63)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:393)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:326)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:810)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:578)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: java.io.UncheckedIOException: java.net.ConnectException
+at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute0(JdkHttpClient.java:443)
+at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
+at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:55)
+at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute(JdkHttpClient.java:359)
+at org.openqa.selenium.remote.tracing.TracedHttpClient.execute(TracedHttpClient.java:54)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:95)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:67)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:162)
+at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+... 26 more
+Caused by: java.net.ConnectException
+at java.net.http/jdk.internal.net.http.common.Utils.toConnectException(Utils.java:1107)
+at java.net.http/jdk.internal.net.http.PlainHttpConnection.connectAsync(PlainHttpConnection.java:203)
+at java.net.http/jdk.internal.net.http.AsyncSSLConnection.connectAsync(AsyncSSLConnection.java:56)
+at java.net.http/jdk.internal.net.http.Http2Connection.createAsync(Http2Connection.java:450)
+at java.net.http/jdk.internal.net.http.Http2ClientImpl.getConnectionFor(Http2ClientImpl.java:133)
+at java.net.http/jdk.internal.net.http.ExchangeImpl.get(ExchangeImpl.java:98)
+at java.net.http/jdk.internal.net.http.Exchange.establishExchange(Exchange.java:374)
+at java.net.http/jdk.internal.net.http.Exchange.responseAsyncImpl0(Exchange.java:567)
+at java.net.http/jdk.internal.net.http.Exchange.responseAsyncImpl(Exchange.java:411)
+at java.net.http/jdk.internal.net.http.Exchange.responseAsync(Exchange.java:403)
+at java.net.http/jdk.internal.net.http.MultiExchange.responseAsyncImpl(MultiExchange.java:430)
+at java.net.http/jdk.internal.net.http.MultiExchange.lambda$responseAsyncImpl$7(MultiExchange.java:471)
+at java.base/java.util.concurrent.CompletableFuture.uniHandle(CompletableFuture.java:934)
+at java.base/java.util.concurrent.CompletableFuture.uniHandleStage(CompletableFuture.java:950)
+at java.base/java.util.concurrent.CompletableFuture.handle(CompletableFuture.java:2340)
+at java.net.http/jdk.internal.net.http.MultiExchange.responseAsyncImpl(MultiExchange.java:461)
+at java.net.http/jdk.internal.net.http.MultiExchange.lambda$responseAsync0$2(MultiExchange.java:350)
+at java.base/java.util.concurrent.CompletableFuture$UniCompose.tryFire(CompletableFuture.java:1150)
+at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510)
+at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1773)
+... 3 more
+Caused by: java.nio.channels.UnresolvedAddressException
+at java.base/sun.nio.ch.Net.checkAddress(Net.java:159)
+at java.base/sun.nio.ch.Net.checkAddress(Net.java:167)
+at java.base/sun.nio.ch.SocketChannelImpl.checkRemote(SocketChannelImpl.java:816)
+at java.base/sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:839)
+at java.net.http/jdk.internal.net.http.PlainHttpConnection.lambda$connectAsync$0(PlainHttpConnection.java:187)
+at java.base/java.security.AccessController.doPrivileged(AccessController.java:569)
+at java.net.http/jdk.internal.net.http.PlainHttpConnection.connectAsync(PlainHttpConnection.java:189)
+... 21 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario1 -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.TestScenario1@61dd025]" started-at="2026-02-17T00:06:56 IST" name="tearDown" finished-at="2026-02-17T00:06:56 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.TestScenario1 -->
+    </test> <!-- Test Scenario 1 - Chrome Windows -->
+    <test started-at="2026-02-17T00:07:01 IST" name="Test Scenario 2 - Edge macOS" finished-at="2026-02-17T00:07:01 IST" duration-ms="13">
+      <class name="tests.TestScenario2">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.TestScenario2@bef2d72]" started-at="2026-02-17T00:07:01 IST" name="setup" finished-at="2026-02-17T00:07:01 IST" duration-ms="5" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[MicrosoftEdge]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[127.0]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[macOS Ventura]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Scenario 2 - Edge macOS Ventura]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'Vrushalis-MacBook-Air.local', ip: '2405:201:100f:f00b:25df:cdfa:bee7:d9d1%en0'
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.7.3', java.version: '17.0.18'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: MicrosoftEdge, browserVersion: 127.0, ms:edgeOptions: {args: [], extensions: []}, platformName: macOS Ventura, testmu:options: {build: Selenium Advanced Assignment, consoleLogs: true, name: Scenario 2 - Edge macOS Ven..., networkLogs: true, screenshots: true, video: true}}]}]
+Capabilities {browserName: MicrosoftEdge, browserVersion: 127.0, ms:edgeOptions: {args: [], extensions: []}, platformName: macOS Ventura, testmu:options: {build: Selenium Advanced Assignment, consoleLogs: true, name: Scenario 2 - Edge macOS Ven..., networkLogs: true, screenshots: true, video: true}}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'Vrushalis-MacBook-Air.local', ip: '2405:201:100f:f00b:25df:cdfa:bee7:d9d1%en0'
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.7.3', java.version: '17.0.18'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: MicrosoftEdge, browserVersion: 127.0, ms:edgeOptions: {args: [], extensions: []}, platformName: macOS Ventura, testmu:options: {build: Selenium Advanced Assignment, consoleLogs: true, name: Scenario 2 - Edge macOS Ven..., networkLogs: true, screenshots: true, video: true}}]}]
+Capabilities {browserName: MicrosoftEdge, browserVersion: 127.0, ms:edgeOptions: {args: [], extensions: []}, platformName: macOS Ventura, testmu:options: {build: Selenium Advanced Assignment, consoleLogs: true, name: Scenario 2 - Edge macOS Ven..., networkLogs: true, screenshots: true, video: true}}
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:537)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:233)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:162)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:142)
+at tests.BaseTest.setup(BaseTest.java:63)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:393)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:326)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:810)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:578)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: java.io.UncheckedIOException: java.net.ConnectException
+at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute0(JdkHttpClient.java:443)
+at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
+at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:55)
+at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute(JdkHttpClient.java:359)
+at org.openqa.selenium.remote.tracing.TracedHttpClient.execute(TracedHttpClient.java:54)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:95)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:67)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:162)
+at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+... 26 more
+Caused by: java.net.ConnectException
+at java.net.http/jdk.internal.net.http.common.Utils.toConnectException(Utils.java:1107)
+at java.net.http/jdk.internal.net.http.PlainHttpConnection.connectAsync(PlainHttpConnection.java:203)
+at java.net.http/jdk.internal.net.http.AsyncSSLConnection.connectAsync(AsyncSSLConnection.java:56)
+at java.net.http/jdk.internal.net.http.Http2Connection.createAsync(Http2Connection.java:450)
+at java.net.http/jdk.internal.net.http.Http2ClientImpl.getConnectionFor(Http2ClientImpl.java:133)
+at java.net.http/jdk.internal.net.http.ExchangeImpl.get(ExchangeImpl.java:98)
+at java.net.http/jdk.internal.net.http.Exchange.establishExchange(Exchange.java:374)
+at java.net.http/jdk.internal.net.http.Exchange.responseAsyncImpl0(Exchange.java:567)
+at java.net.http/jdk.internal.net.http.Exchange.responseAsyncImpl(Exchange.java:411)
+at java.net.http/jdk.internal.net.http.Exchange.responseAsync(Exchange.java:403)
+at java.net.http/jdk.internal.net.http.MultiExchange.responseAsyncImpl(MultiExchange.java:430)
+at java.net.http/jdk.internal.net.http.MultiExchange.lambda$responseAsyncImpl$7(MultiExchange.java:471)
+at java.base/java.util.concurrent.CompletableFuture.uniHandle(CompletableFuture.java:934)
+at java.base/java.util.concurrent.CompletableFuture.uniHandleStage(CompletableFuture.java:950)
+at java.base/java.util.concurrent.CompletableFuture.handle(CompletableFuture.java:2340)
+at java.net.http/jdk.internal.net.http.MultiExchange.responseAsyncImpl(MultiExchange.java:461)
+at java.net.http/jdk.internal.net.http.MultiExchange.lambda$responseAsync0$2(MultiExchange.java:350)
+at java.base/java.util.concurrent.CompletableFuture$UniCompose.tryFire(CompletableFuture.java:1150)
+at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510)
+at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1773)
+... 3 more
+Caused by: java.nio.channels.UnresolvedAddressException
+at java.base/sun.nio.ch.Net.checkAddress(Net.java:159)
+at java.base/sun.nio.ch.Net.checkAddress(Net.java:167)
+at java.base/sun.nio.ch.SocketChannelImpl.checkRemote(SocketChannelImpl.java:816)
+at java.base/sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:839)
+at java.net.http/jdk.internal.net.http.PlainHttpConnection.lambda$connectAsync$0(PlainHttpConnection.java:187)
+at java.base/java.security.AccessController.doPrivileged(AccessController.java:569)
+at java.net.http/jdk.internal.net.http.PlainHttpConnection.connectAsync(PlainHttpConnection.java:189)
+... 21 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="runScenario1()[pri:0, instance:tests.TestScenario2@bef2d72]" started-at="2026-02-17T00:07:01 IST" name="runScenario1" finished-at="2026-02-17T00:07:01 IST" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'Vrushalis-MacBook-Air.local', ip: '2405:201:100f:f00b:25df:cdfa:bee7:d9d1%en0'
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.7.3', java.version: '17.0.18'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: MicrosoftEdge, browserVersion: 127.0, ms:edgeOptions: {args: [], extensions: []}, platformName: macOS Ventura, testmu:options: {build: Selenium Advanced Assignment, consoleLogs: true, name: Scenario 2 - Edge macOS Ven..., networkLogs: true, screenshots: true, video: true}}]}]
+Capabilities {browserName: MicrosoftEdge, browserVersion: 127.0, ms:edgeOptions: {args: [], extensions: []}, platformName: macOS Ventura, testmu:options: {build: Selenium Advanced Assignment, consoleLogs: true, name: Scenario 2 - Edge macOS Ven..., networkLogs: true, screenshots: true, video: true}}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'Vrushalis-MacBook-Air.local', ip: '2405:201:100f:f00b:25df:cdfa:bee7:d9d1%en0'
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.7.3', java.version: '17.0.18'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: MicrosoftEdge, browserVersion: 127.0, ms:edgeOptions: {args: [], extensions: []}, platformName: macOS Ventura, testmu:options: {build: Selenium Advanced Assignment, consoleLogs: true, name: Scenario 2 - Edge macOS Ven..., networkLogs: true, screenshots: true, video: true}}]}]
+Capabilities {browserName: MicrosoftEdge, browserVersion: 127.0, ms:edgeOptions: {args: [], extensions: []}, platformName: macOS Ventura, testmu:options: {build: Selenium Advanced Assignment, consoleLogs: true, name: Scenario 2 - Edge macOS Ven..., networkLogs: true, screenshots: true, video: true}}
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:537)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:233)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:162)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:142)
+at tests.BaseTest.setup(BaseTest.java:63)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:393)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:326)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:810)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:578)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: java.io.UncheckedIOException: java.net.ConnectException
+at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute0(JdkHttpClient.java:443)
+at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
+at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:55)
+at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute(JdkHttpClient.java:359)
+at org.openqa.selenium.remote.tracing.TracedHttpClient.execute(TracedHttpClient.java:54)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:95)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:67)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:162)
+at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+... 26 more
+Caused by: java.net.ConnectException
+at java.net.http/jdk.internal.net.http.common.Utils.toConnectException(Utils.java:1107)
+at java.net.http/jdk.internal.net.http.PlainHttpConnection.connectAsync(PlainHttpConnection.java:203)
+at java.net.http/jdk.internal.net.http.AsyncSSLConnection.connectAsync(AsyncSSLConnection.java:56)
+at java.net.http/jdk.internal.net.http.Http2Connection.createAsync(Http2Connection.java:450)
+at java.net.http/jdk.internal.net.http.Http2ClientImpl.getConnectionFor(Http2ClientImpl.java:133)
+at java.net.http/jdk.internal.net.http.ExchangeImpl.get(ExchangeImpl.java:98)
+at java.net.http/jdk.internal.net.http.Exchange.establishExchange(Exchange.java:374)
+at java.net.http/jdk.internal.net.http.Exchange.responseAsyncImpl0(Exchange.java:567)
+at java.net.http/jdk.internal.net.http.Exchange.responseAsyncImpl(Exchange.java:411)
+at java.net.http/jdk.internal.net.http.Exchange.responseAsync(Exchange.java:403)
+at java.net.http/jdk.internal.net.http.MultiExchange.responseAsyncImpl(MultiExchange.java:430)
+at java.net.http/jdk.internal.net.http.MultiExchange.lambda$responseAsyncImpl$7(MultiExchange.java:471)
+at java.base/java.util.concurrent.CompletableFuture.uniHandle(CompletableFuture.java:934)
+at java.base/java.util.concurrent.CompletableFuture.uniHandleStage(CompletableFuture.java:950)
+at java.base/java.util.concurrent.CompletableFuture.handle(CompletableFuture.java:2340)
+at java.net.http/jdk.internal.net.http.MultiExchange.responseAsyncImpl(MultiExchange.java:461)
+at java.net.http/jdk.internal.net.http.MultiExchange.lambda$responseAsync0$2(MultiExchange.java:350)
+at java.base/java.util.concurrent.CompletableFuture$UniCompose.tryFire(CompletableFuture.java:1150)
+at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510)
+at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1773)
+... 3 more
+Caused by: java.nio.channels.UnresolvedAddressException
+at java.base/sun.nio.ch.Net.checkAddress(Net.java:159)
+at java.base/sun.nio.ch.Net.checkAddress(Net.java:167)
+at java.base/sun.nio.ch.SocketChannelImpl.checkRemote(SocketChannelImpl.java:816)
+at java.base/sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:839)
+at java.net.http/jdk.internal.net.http.PlainHttpConnection.lambda$connectAsync$0(PlainHttpConnection.java:187)
+at java.base/java.security.AccessController.doPrivileged(AccessController.java:569)
+at java.net.http/jdk.internal.net.http.PlainHttpConnection.connectAsync(PlainHttpConnection.java:189)
+... 21 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario1 -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.TestScenario2@bef2d72]" started-at="2026-02-17T00:07:01 IST" name="tearDown" finished-at="2026-02-17T00:07:01 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.TestScenario2@bef2d72]" started-at="2026-02-17T00:07:01 IST" name="setup" finished-at="2026-02-17T00:07:01 IST" duration-ms="4" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[MicrosoftEdge]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[127.0]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[macOS Ventura]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Scenario 2 - Edge macOS Ventura]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'Vrushalis-MacBook-Air.local', ip: '2405:201:100f:f00b:25df:cdfa:bee7:d9d1%en0'
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.7.3', java.version: '17.0.18'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: MicrosoftEdge, browserVersion: 127.0, ms:edgeOptions: {args: [], extensions: []}, platformName: macOS Ventura, testmu:options: {build: Selenium Advanced Assignment, consoleLogs: true, name: Scenario 2 - Edge macOS Ven..., networkLogs: true, screenshots: true, video: true}}]}]
+Capabilities {browserName: MicrosoftEdge, browserVersion: 127.0, ms:edgeOptions: {args: [], extensions: []}, platformName: macOS Ventura, testmu:options: {build: Selenium Advanced Assignment, consoleLogs: true, name: Scenario 2 - Edge macOS Ven..., networkLogs: true, screenshots: true, video: true}}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'Vrushalis-MacBook-Air.local', ip: '2405:201:100f:f00b:25df:cdfa:bee7:d9d1%en0'
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.7.3', java.version: '17.0.18'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: MicrosoftEdge, browserVersion: 127.0, ms:edgeOptions: {args: [], extensions: []}, platformName: macOS Ventura, testmu:options: {build: Selenium Advanced Assignment, consoleLogs: true, name: Scenario 2 - Edge macOS Ven..., networkLogs: true, screenshots: true, video: true}}]}]
+Capabilities {browserName: MicrosoftEdge, browserVersion: 127.0, ms:edgeOptions: {args: [], extensions: []}, platformName: macOS Ventura, testmu:options: {build: Selenium Advanced Assignment, consoleLogs: true, name: Scenario 2 - Edge macOS Ven..., networkLogs: true, screenshots: true, video: true}}
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:537)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:233)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:162)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:142)
+at tests.BaseTest.setup(BaseTest.java:63)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:393)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:326)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:810)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:578)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: java.io.UncheckedIOException: java.net.ConnectException
+at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute0(JdkHttpClient.java:443)
+at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
+at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:55)
+at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute(JdkHttpClient.java:359)
+at org.openqa.selenium.remote.tracing.TracedHttpClient.execute(TracedHttpClient.java:54)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:95)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:67)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:162)
+at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+... 26 more
+Caused by: java.net.ConnectException
+at java.net.http/jdk.internal.net.http.common.Utils.toConnectException(Utils.java:1107)
+at java.net.http/jdk.internal.net.http.PlainHttpConnection.connectAsync(PlainHttpConnection.java:203)
+at java.net.http/jdk.internal.net.http.AsyncSSLConnection.connectAsync(AsyncSSLConnection.java:56)
+at java.net.http/jdk.internal.net.http.Http2Connection.createAsync(Http2Connection.java:450)
+at java.net.http/jdk.internal.net.http.Http2ClientImpl.getConnectionFor(Http2ClientImpl.java:133)
+at java.net.http/jdk.internal.net.http.ExchangeImpl.get(ExchangeImpl.java:98)
+at java.net.http/jdk.internal.net.http.Exchange.establishExchange(Exchange.java:374)
+at java.net.http/jdk.internal.net.http.Exchange.responseAsyncImpl0(Exchange.java:567)
+at java.net.http/jdk.internal.net.http.Exchange.responseAsyncImpl(Exchange.java:411)
+at java.net.http/jdk.internal.net.http.Exchange.responseAsync(Exchange.java:403)
+at java.net.http/jdk.internal.net.http.MultiExchange.responseAsyncImpl(MultiExchange.java:430)
+at java.net.http/jdk.internal.net.http.MultiExchange.lambda$responseAsyncImpl$7(MultiExchange.java:471)
+at java.base/java.util.concurrent.CompletableFuture.uniHandle(CompletableFuture.java:934)
+at java.base/java.util.concurrent.CompletableFuture.uniHandleStage(CompletableFuture.java:950)
+at java.base/java.util.concurrent.CompletableFuture.handle(CompletableFuture.java:2340)
+at java.net.http/jdk.internal.net.http.MultiExchange.responseAsyncImpl(MultiExchange.java:461)
+at java.net.http/jdk.internal.net.http.MultiExchange.lambda$responseAsync0$2(MultiExchange.java:350)
+at java.base/java.util.concurrent.CompletableFuture$UniCompose.tryFire(CompletableFuture.java:1150)
+at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510)
+at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1773)
+... 3 more
+Caused by: java.nio.channels.UnresolvedAddressException
+at java.base/sun.nio.ch.Net.checkAddress(Net.java:159)
+at java.base/sun.nio.ch.Net.checkAddress(Net.java:167)
+at java.base/sun.nio.ch.SocketChannelImpl.checkRemote(SocketChannelImpl.java:816)
+at java.base/sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:839)
+at java.net.http/jdk.internal.net.http.PlainHttpConnection.lambda$connectAsync$0(PlainHttpConnection.java:187)
+at java.base/java.security.AccessController.doPrivileged(AccessController.java:569)
+at java.net.http/jdk.internal.net.http.PlainHttpConnection.connectAsync(PlainHttpConnection.java:189)
+... 21 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="runScenario2()[pri:0, instance:tests.TestScenario2@bef2d72]" started-at="2026-02-17T00:07:01 IST" name="runScenario2" finished-at="2026-02-17T00:07:01 IST" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'Vrushalis-MacBook-Air.local', ip: '2405:201:100f:f00b:25df:cdfa:bee7:d9d1%en0'
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.7.3', java.version: '17.0.18'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: MicrosoftEdge, browserVersion: 127.0, ms:edgeOptions: {args: [], extensions: []}, platformName: macOS Ventura, testmu:options: {build: Selenium Advanced Assignment, consoleLogs: true, name: Scenario 2 - Edge macOS Ven..., networkLogs: true, screenshots: true, video: true}}]}]
+Capabilities {browserName: MicrosoftEdge, browserVersion: 127.0, ms:edgeOptions: {args: [], extensions: []}, platformName: macOS Ventura, testmu:options: {build: Selenium Advanced Assignment, consoleLogs: true, name: Scenario 2 - Edge macOS Ven..., networkLogs: true, screenshots: true, video: true}}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'Vrushalis-MacBook-Air.local', ip: '2405:201:100f:f00b:25df:cdfa:bee7:d9d1%en0'
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.7.3', java.version: '17.0.18'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: MicrosoftEdge, browserVersion: 127.0, ms:edgeOptions: {args: [], extensions: []}, platformName: macOS Ventura, testmu:options: {build: Selenium Advanced Assignment, consoleLogs: true, name: Scenario 2 - Edge macOS Ven..., networkLogs: true, screenshots: true, video: true}}]}]
+Capabilities {browserName: MicrosoftEdge, browserVersion: 127.0, ms:edgeOptions: {args: [], extensions: []}, platformName: macOS Ventura, testmu:options: {build: Selenium Advanced Assignment, consoleLogs: true, name: Scenario 2 - Edge macOS Ven..., networkLogs: true, screenshots: true, video: true}}
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:537)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:233)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:162)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:142)
+at tests.BaseTest.setup(BaseTest.java:63)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:393)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:326)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:810)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:578)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: java.io.UncheckedIOException: java.net.ConnectException
+at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute0(JdkHttpClient.java:443)
+at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
+at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:55)
+at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute(JdkHttpClient.java:359)
+at org.openqa.selenium.remote.tracing.TracedHttpClient.execute(TracedHttpClient.java:54)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:95)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:67)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:162)
+at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+... 26 more
+Caused by: java.net.ConnectException
+at java.net.http/jdk.internal.net.http.common.Utils.toConnectException(Utils.java:1107)
+at java.net.http/jdk.internal.net.http.PlainHttpConnection.connectAsync(PlainHttpConnection.java:203)
+at java.net.http/jdk.internal.net.http.AsyncSSLConnection.connectAsync(AsyncSSLConnection.java:56)
+at java.net.http/jdk.internal.net.http.Http2Connection.createAsync(Http2Connection.java:450)
+at java.net.http/jdk.internal.net.http.Http2ClientImpl.getConnectionFor(Http2ClientImpl.java:133)
+at java.net.http/jdk.internal.net.http.ExchangeImpl.get(ExchangeImpl.java:98)
+at java.net.http/jdk.internal.net.http.Exchange.establishExchange(Exchange.java:374)
+at java.net.http/jdk.internal.net.http.Exchange.responseAsyncImpl0(Exchange.java:567)
+at java.net.http/jdk.internal.net.http.Exchange.responseAsyncImpl(Exchange.java:411)
+at java.net.http/jdk.internal.net.http.Exchange.responseAsync(Exchange.java:403)
+at java.net.http/jdk.internal.net.http.MultiExchange.responseAsyncImpl(MultiExchange.java:430)
+at java.net.http/jdk.internal.net.http.MultiExchange.lambda$responseAsyncImpl$7(MultiExchange.java:471)
+at java.base/java.util.concurrent.CompletableFuture.uniHandle(CompletableFuture.java:934)
+at java.base/java.util.concurrent.CompletableFuture.uniHandleStage(CompletableFuture.java:950)
+at java.base/java.util.concurrent.CompletableFuture.handle(CompletableFuture.java:2340)
+at java.net.http/jdk.internal.net.http.MultiExchange.responseAsyncImpl(MultiExchange.java:461)
+at java.net.http/jdk.internal.net.http.MultiExchange.lambda$responseAsync0$2(MultiExchange.java:350)
+at java.base/java.util.concurrent.CompletableFuture$UniCompose.tryFire(CompletableFuture.java:1150)
+at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510)
+at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1773)
+... 3 more
+Caused by: java.nio.channels.UnresolvedAddressException
+at java.base/sun.nio.ch.Net.checkAddress(Net.java:159)
+at java.base/sun.nio.ch.Net.checkAddress(Net.java:167)
+at java.base/sun.nio.ch.SocketChannelImpl.checkRemote(SocketChannelImpl.java:816)
+at java.base/sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:839)
+at java.net.http/jdk.internal.net.http.PlainHttpConnection.lambda$connectAsync$0(PlainHttpConnection.java:187)
+at java.base/java.security.AccessController.doPrivileged(AccessController.java:569)
+at java.net.http/jdk.internal.net.http.PlainHttpConnection.connectAsync(PlainHttpConnection.java:189)
+... 21 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario2 -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.TestScenario2@bef2d72]" started-at="2026-02-17T00:07:01 IST" name="tearDown" finished-at="2026-02-17T00:07:01 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.TestScenario2 -->
+    </test> <!-- Test Scenario 2 - Edge macOS -->
+  </suite> <!-- SeleniumAdvancedSuite -->
+</testng-results>
