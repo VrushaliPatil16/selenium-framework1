@@ -1,71 +1,36 @@
+
 package tests;
 
-import org.openqa.selenium.MutableCapabilities;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
-import org.openqa.selenium.edge.EdgeOptions;
 import org.openqa.selenium.remote.RemoteWebDriver;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.Parameters;
-
+import org.openqa.selenium.remote.DesiredCapabilities;
+import org.testng.annotations.*;
 import java.net.URL;
-import java.time.Duration;
-import java.util.HashMap;
-import java.util.Map;
 
 public class BaseTest {
 
     protected WebDriver driver;
 
-    public static String username = "patilvb22nov21";
-    public static String access_key = "LT_8RovrbxpqvMTL2tMHieN254DV4e5GxOxnFP4YiDU807SM6U";
+    @Parameters({"browser", "os"})
+    @BeforeClass
+    public void setup(@Optional("chrome") String browser, @Optional("Windows 10") String os) throws Exception {
 
-    @Parameters({"browser", "browserVersion", "platformName", "testName"})
-    @BeforeMethod(alwaysRun = true)
-    public void setup(String browser,
-                      String browserVersion,
-                      String platformName,
-                      String testName) throws Exception {
+        DesiredCapabilities caps = new DesiredCapabilities();
+        caps.setBrowserName(browser);       // Chrome / Edge
+        caps.setPlatformName(os);           // Windows 10 / macOS Ventura
+        caps.setCapability("name", "Selenium Advanced Assignment"); // Optional: session name
 
-        MutableCapabilities options;
+        // TestMu AI Remote WebDriver URL
+        String username = "patilvb22nov21";
+        String accessToken = "LT_8RovrbxpqvMTL2tMHieN254DV4e5GxOxnFP4YiDU807SM6U";
+        String gridUrl = "https://" + username + ":" + accessToken + "@hub.testmuai.ai/wd/hub";
 
-        if (browser.equalsIgnoreCase("Chrome")) {
-            options = new ChromeOptions();
-            options.setCapability("browserName", "chrome");
-        } else if (browser.equalsIgnoreCase("Edge") || browser.equalsIgnoreCase("MicrosoftEdge")) {
-            options = new EdgeOptions();
-            options.setCapability("browserName", "edge");
-        } else {
-            throw new IllegalArgumentException("Unsupported browser: " + browser);
-        }
+        driver = new RemoteWebDriver(new URL(gridUrl), caps);
 
-
-        options.setCapability("browserName", browser);
-        options.setCapability("browserVersion", browserVersion);
-        options.setCapability("platformName", platformName);
-
-        // TestMu AI specific capabilities
-        Map<String, Object> testmuOptions = new HashMap<>();
-        testmuOptions.put("name", testName);
-        testmuOptions.put("build", "Selenium Advanced Assignment");
-        testmuOptions.put("networkLogs", true);
-        testmuOptions.put("consoleLogs", true);
-        testmuOptions.put("video", true);
-        testmuOptions.put("screenshots", true);
-
-        options.setCapability("testmu:options", testmuOptions);
-
-        String hubURL = "https://" + username + ":" + access_key + "@hub.testmu.ai/wd/hub";
-        System.out.println("Grid URL: " + hubURL);
-
-        
-        driver = new RemoteWebDriver(new URL(hubURL), options);
-
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+        driver.manage().window().maximize();
     }
 
-    @AfterMethod(alwaysRun = true)
+    @AfterClass
     public void tearDown() {
         if (driver != null) {
             driver.quit();
