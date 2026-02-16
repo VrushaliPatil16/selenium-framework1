@@ -19,7 +19,7 @@ public class BaseTest {
     protected WebDriver driver;
 
     public static String username = "patilvb22nov21";
-    public static String access_key = "LT_BCIbGZ3M8ofU65bM9pEEnq3hZKuVHd9DMfTt7Qqfu3hnoRO";
+    public static String access_key = "LT_8RovrbxpqvMTL2tMHieN254DV4e5GxOxnFP4YiDU807SM6U";
 
     @Parameters({"browser", "browserVersion", "platformName", "testName"})
     @BeforeMethod(alwaysRun = true)
